@@ -115,7 +115,7 @@ let mySketch = function(p) {
     p.mousePressed = function() {
 
         //pause button
-        if (go == 1 && menu == 0 && keyMenu == 0 && scaleMenu == 0 && p.mouseX > p.windowWidth / 2 - p.windowWidth / 6 && p.mouseX < p.windowWidth / 2 + p.windowWidth / 6 && p.mouseY > p.windowHeight - p.windowHeigh/2 - textHeight && p.mouseY < p.windowHeight - p.windowHeight/2 + textHeight) {
+        if (go == 1 && p.mouseX > p.windowWidth / 2 - p.windowWidth / 6 && p.mouseX < p.windowWidth / 2 + p.windowWidth / 6 && p.mouseY > p.windowHeight - p.windowHeight/2 - textHeight && p.mouseY < p.windowHeight - p.windowHeight/2 + textHeight) {
             if (audioSpigot == 1){
               audioSpigot = 0;
             } else {
