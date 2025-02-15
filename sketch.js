@@ -4,9 +4,6 @@ let mySketch = function(p) {
     let font, startText, menuText, TWstartText, TWmenuText, textHeight;
     let go = 1, menu = 0, keyMenu = 0, scaleMenu = 0, audioSpigot = 1;
     let wkPos, bkPos, keySize, wkeyVertOfset, bkeyVertOfset, keyVertDist, keyboardSW;
-    let teclasBrancas = [], teclasPretas = [], teclado = [], keyID;
-    let scales = ['maj', 'maj pent', 'min', 'min pent'];
-    let escalas = [];
 
     p.preload = function() {
         font = p.loadFont('tiny5.ttf');
@@ -96,14 +93,14 @@ let mySketch = function(p) {
       if (audioSpigot == 1){
         p.fill(0);
         p.text('pause', p.windowWidth / 2, p.windowHeight/2);
-        sendMsgToWebPd("n_0_9", "0", [rx]);
+        sendMsgToWebPd("n_0_5", "0", [rx]);
       } else {
         rx = audioSpigot;
         p.fill(0);
         p.text('play', p.windowWidth / 2, p.windowHeight/2);
-        sendMsgToWebPd("n_0_9", "0", [rx]);
+        sendMsgToWebPd("n_0_5", "0", [rx]);
       }
-      sendMsgToWebPd("n_0_10", "0", [rz]);
+      sendMsgToWebPd("n_0_6", "0", [rz]);
     }  
 
     p.touchStarted = function() {
